@@ -27,7 +27,7 @@ def encrypt():
 @app.route("/decrypt", methods=["POST"])
 def decrypt():
     cryptText = request.values["crypt"]
-    print cryptText
+   
     shift = int(request.values["key"])
     plainText = ""
     
